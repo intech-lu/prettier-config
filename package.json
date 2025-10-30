@@ -1,0 +1,53 @@
+{
+  "name": "@intech.lu/prettier-config",
+  "version": "1.0.0",
+  "description": "Prettier rules for InTech projects",
+  "keywords": [
+    "style guide",
+    "prettier",
+    "format",
+    "intech"
+  ],
+  "author": "InTech S.A. <equipe.titane@intech.lu> (https://www.intech.lu)",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "contributors": [
+    {
+      "name": "Tristan Chaumont",
+      "email": "tristan.chaumont@intech.lu"
+    },
+    {
+      "name": "Loïc Gasiorowski",
+      "email": "loic.gasiorowski@intech.lu"
+    },
+    {
+      "name": "Silvio Brancati",
+      "email": "silvio.brancati@intech.lu"
+    },
+    {
+      "name": "Jacques Vernay",
+      "email": "jacques.vernay@intech.lu"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intech-lu/prettier-config"
+  },
+  "homepage": "https://github.com/intech-lu/prettier-config",
+  "license": "MIT",
+  "files": [
+    ".prettierrc.js"
+  ],
+  "main": ".prettierrc.js",
+  "type": "module",
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2"
+  },
+  "peerDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
