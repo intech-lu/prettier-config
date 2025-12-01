@@ -45,7 +45,7 @@
     "@trivago/prettier-plugin-sort-imports": "^5.2.2"
   },
   "peerDependencies": {
-    "prettier": "^3.6.2"
+    "prettier": "^3.7.3"
   },
   "engines": {
     "node": ">=14.0.0"
