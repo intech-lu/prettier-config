@@ -25,12 +25,20 @@ Add the Prettier InTech Rules on your existing project.
 
 - <https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>
 
-Create a `.vscode/settings.json` file with the following configuration at the root of your project:
+Create a `.vscode/settings.json` file with the following configuration at the root of your project to automatically format your code on save using Prettier:
 
 ```json
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+}
+```
+
+Create a `.vscode/extensions.json` file with the following configuration at the root of your project to recommend the Prettier extension to your team members:
+
+```json
+{
+  "recommendations": ["esbenp.prettier-vscode"]
 }
 ```
 
