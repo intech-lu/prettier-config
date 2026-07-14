@@ -1,6 +1,6 @@
 {
   "name": "@intech.lu/prettier-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Prettier rules for InTech projects",
   "keywords": [
     "style guide",
@@ -42,13 +42,12 @@
   "main": ".prettierrc.js",
   "type": "module",
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
-    "prettier-plugin-tailwindcss": "^0.8.0"
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2"
   },
   "peerDependencies": {
-    "prettier": "^3.8.3"
+    "prettier": "^3.9.5"
   },
   "engines": {
-    "node": ">=24.15.0"
+    "node": ">=24.18.0"
   }
 }

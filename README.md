@@ -19,8 +19,7 @@ Add the Prettier InTech Rules on your existing project.
 
 ### 📋 Requirements
 
-- NPM version >= 9
-- Node.js version >= `v18.18.0`
+- Node.js version >= `v24.18.0`
 
 ### 1️⃣ Step 1: install the Prettier extension for VSCode
 
@@ -40,7 +39,7 @@ Create a `.vscode/settings.json` file with the following configuration at the ro
 Go to the folder of your project and execute the following command:
 
 ```bash
-npm install -D prettier '@intech.lu/prettier-config'
+npm install -D prettier '@intech.lu/prettier-config'@latest
 ```
 
 ### 3️⃣ Step 3: create the Prettier configuration
@@ -53,7 +52,7 @@ import intechPrettierConfig from '@intech.lu/prettier-config';
 export default intechPrettierConfig;
 ```
 
-If you need to override the InTech Rules for some reason, simply do it by overriding existing rules in your `.prettierc.js`
+If you need to override the InTech Rules for some reason, simply do it by overriding existing rules in your `.prettierc.mjs`
 
 ```js
 import intechPrettierConfig from '@intech.lu/prettier-config';
@@ -195,30 +194,10 @@ export default {
 
 You can now add the rules from this plugin inside the `.prettierrc.mjs` file.
 
+#### Recommendations
+
+- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) : This plugin automatically sorts your Tailwind CSS classes based on the recommended order. It is highly recommended to use this plugin if you're using Tailwind CSS in your project.
+
 ### 5️⃣ Step 5: enjoy 🎉
 
 You now have the InTech Prettier rules applied automatically to your project.
-
-## 💡 Import sorter configuration recommendations
-
-Here are some recommendations for configuring the `importOrder` option in the `@trivago/prettier-plugin-sort-imports` plugin with different frameworks:
-
-- Native JS / TS
-
-You can use the default order provided by InTech Rules. As a reminder, here's the config:
-
-```js
-importOrder: ['<THIRD_PARTY_MODULES>', '@/(.*)', '^[./]']
-```
-
-- Angular
-
-```js
-importOrder: ['^@angular/(.*)', '^(rxjs|rxjs/(.*))', '<THIRD_PARTY_MODULES>', '@/(.*)', '^[./]']
-```
-
-- React
-
-```js
-importOrder: ['^react(.*)', '<THIRD_PARTY_MODULES>', '@/(.*)', '^[./]']
-```
