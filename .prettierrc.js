@@ -15,7 +15,7 @@ const prettierConfig = {
   endOfLine: 'lf',
 
   /* Import sorter + Tailwind CSS class sorting */
-  plugins: ['@trivago/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
+  plugins: ['@trivago/prettier-plugin-sort-imports'],
   importOrder: ['<THIRD_PARTY_MODULES>', '@/(.*)', '^[./]'],
   importOrderSeparation: true,
 

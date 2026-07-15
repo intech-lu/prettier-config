@@ -1,6 +1,6 @@
 {
   "name": "@intech.lu/prettier-config",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Prettier rules for InTech projects",
   "keywords": [
     "style guide",
